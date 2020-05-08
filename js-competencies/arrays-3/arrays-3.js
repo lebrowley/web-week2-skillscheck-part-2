@@ -10,7 +10,19 @@
 
 var sunsetColors = ["brown", "purple", "pink", "red", "orange", "yellow"]
 
-//Code here
+
+// let sunset = array => {
+//     let newSunset = [... sunsetColors]
+//     newSunset[0] = "blue"
+//     return newSunset
+// }
+
+function sunset (sunsetColors){
+    sunsetColors[0] = "blue"
+    return sunsetColors
+}
+
+
 
 
 //////////////////PROBLEM 2////////////////////
@@ -21,7 +33,13 @@ var sunsetColors = ["brown", "purple", "pink", "red", "orange", "yellow"]
 
 var sunriseColors = ["yellow", "orange", "red", "pink", "purple", "blue"]
 
-//Code here
+let sunrise = array => {
+    let newSunrise = [... sunriseColors]
+    newSunrise[0] = "green"
+    return newSunrise
+}
+
+
 
 
 //////////////////PROBLEM 3////////////////////

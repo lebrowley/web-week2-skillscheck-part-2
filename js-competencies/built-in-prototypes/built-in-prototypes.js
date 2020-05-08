@@ -9,7 +9,12 @@
 //dragonMapper should return the the new array. You should
 //use the built-in array method .map
   
-  //Code here
+const dragonMapper = array => {
+  newDragonMap = array.map(function(element){
+    `${element} here be dragons`
+  })
+  return newDragonMap
+}
 
 
 
@@ -19,8 +24,16 @@
 //in an array and filters out every object that
 //does NOT have the key favoriteCookie.
 //cookieLoversOnly should return the filtered array.
-  
-  //Code here
+
+
+function cookieLoversOnly(array){
+  let cookieLovers = array.filter(function(element){
+    if(element.favoriteCookie !== true){
+      delete element
+    }
+  })
+  return cookieLovers
+}
 
 
 //////////////////PROBLEM 3////////////////////
@@ -34,8 +47,17 @@
 //Hint: there is an array method for this.
 
 
-  //Code here
+//  function changeValue(array, cb){
+//    array.forEach(function(element){
+//      cb(element)
+//    })
+//  }
 
+//  const changeValue = (array, cb) => {
+//    array.forEach(element => cb(element))
+//  }
+
+ const changeValue = (array, cb) => array.forEach(element => cb(element))
 
 
 //////////////////PROBLEM 4////////////////////
@@ -45,8 +67,13 @@
 //the elements (here the word product means the result 
 //of multiplying all the elements together)
 //Return the product.
-  
-  //Code here
+
+function findProduct(array){
+  let product = array.reduce(function(acc, element){
+    return acc *= element
+  }, 0)
+  return product
+}
 
 
 //////////////////PROBLEM 5////////////////////
